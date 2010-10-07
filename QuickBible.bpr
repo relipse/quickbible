@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="QuickBible.exe"/>
+    <OBJFILES value="QuickBible.obj Unit1.obj csvparser.obj Bible.obj sqlite3.obj CsvBible.obj 
+      FileBible.obj VPLBible.obj RunSilent.obj CallDLLInterfaceFunction.obj 
+      BibleAbbreviationsEn.obj BibleStructures.obj BibleStructuresSimple.obj 
+      UnitPreferences.obj UnitUtils.obj LowLevelDLLFunction.obj 
+      HighLevelDLLFunction.obj BibleVerseParse.obj BibleInfo.obj 
+      ..\lib\Win32LoadLibHelper.obj"/>
+    <RESFILES value="QuickBible.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm UnitPreferences.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="SimpleHtmlLikeLISTBox.lib NxGridRun.lib vclx.lib NxCommonRun.lib rtl.lib 
+      vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib NxCommonRun.lib vclx.lib NxGridRun.lib 
+      SimpleHtmlLikeLISTBox.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi NxCommonRun.bpi NxCommonDsgn.bpi NxGridRun.bpi 
+      NxCollectionRun.bpi NxInspectorRun.bpi NxThirdpartyRun.bpi NxSheetRun.bpi"/>
+    <PATHCPP value=".;..\lib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="QuickBible.cpp"/>
+    <INCLUDEPATH value="..\lib;$(BCB)\Lib;&quot;..\components\Next Suite\Sources\Next Grid&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\Utility\cpp\bcb\QuickBible;&quot;C:\Utility\cpp\bcb\components\Next Suite\Sources&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\lib;&quot;..\components\Next Suite\Sources\Next Grid&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\Utility\cpp\bcb\QuickBible;$(BCB)\Projects\Lib;&quot;C:\Utility\cpp\bcb\components\Next Suite\Sources&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="QuickBible.res" FORMNAME="" UNITNAME="QuickBible.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="QuickBible.cpp" FORMNAME="" UNITNAME="QuickBible" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="frmQuickBible" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="csvparser.cpp" FORMNAME="" UNITNAME="csvparser.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bible.cpp" FORMNAME="" UNITNAME="Bible.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sqlite3.h" FORMNAME="" UNITNAME="sqlite3.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SQLITE3CLASS.h" FORMNAME="" UNITNAME="SQLITE3CLASS.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sqlite3.dll" FORMNAME="" UNITNAME="sqlite3.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sqlite3.c" FORMNAME="" UNITNAME="sqlite3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CsvBible.cpp" FORMNAME="" UNITNAME="CsvBible" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FileBible.cpp" FORMNAME="" UNITNAME="FileBible" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VPLBible.cpp" FORMNAME="" UNITNAME="VPLBible" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RunSilent.cpp" FORMNAME="" UNITNAME="RunSilent" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CallDLLInterfaceFunction.cpp" FORMNAME="" UNITNAME="CallDLLInterfaceFunction" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BibleAbbreviationsEn.cpp" FORMNAME="" UNITNAME="BibleAbbreviationsEn" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BibleStructures.cpp" FORMNAME="" UNITNAME="BibleStructures" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BibleStructuresSimple.cpp" FORMNAME="" UNITNAME="BibleStructuresSimple" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitPreferences.cpp" FORMNAME="FrmPreferences" UNITNAME="UnitPreferences" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitUtils.cpp" FORMNAME="" UNITNAME="UnitUtils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LowLevelDLLFunction.cpp" FORMNAME="" UNITNAME="LowLevelDLLFunction" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HighLevelDLLFunction.cpp" FORMNAME="" UNITNAME="HighLevelDLLFunction" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BibleVerseParse.cpp" FORMNAME="" UNITNAME="BibleVerseParse" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BibleInfo.cpp" FORMNAME="" UNITNAME="BibleInfo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lib\Win32LoadLibHelper.cpp" FORMNAME="" UNITNAME="Win32LoadLibHelper" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=2
+Build=23
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.2.23
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\bcbie60.bpl=Borland C++Builder Internet Explorer 5 Components Package
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=..\lib;$(BCB)\Lib;..\components\Next Suite\Sources\Next Grid;C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Lib;..\components\Next Suite\Sources\Next Grid;C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\components\Next Suite\Sources\Next Grid;C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\include;$(BCB)\include\vcl
+Item3=C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=..\lib;..\components\Next Suite\Sources\Next Grid;C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;$(BCB)\Projects\Lib;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\components\Next Suite\Sources\Next Grid;C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;$(BCB)\Projects\Lib;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder6\Projects;C:\Utility\cpp\bcb\QuickBible;$(BCB)\Projects\Lib;C:\Utility\cpp\bcb\components\Next Suite\Sources;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=-PluginsPath Plugins -BiblesPath Bibles -Debug -ShowSearchOpts -IgnoreCase -SearchWhere NT -Bible KJVR -SearchText jesus*tempt
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=C:\Utility\cpp\bcb\QuickBible\QuickBible.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
