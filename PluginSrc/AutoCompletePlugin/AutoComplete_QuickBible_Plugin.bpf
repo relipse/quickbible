@@ -1,0 +1,6 @@
+USEFORM("autocomplete_plugin_about_form.cpp", FrmAutoCompleteQuickBiblePluginAbout);
+USEFORM("autocomplete_plugin_dropdown_form.cpp", FrmAutoComplete);
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+DllEntryPoint
