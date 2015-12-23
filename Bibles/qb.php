@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * For example php qb.php nkjv love  
+ * 
+ */
+ 
 $qb = new QuickBibleCli();
 
 if (!$qb->parseCli()){
@@ -317,7 +321,7 @@ class QuickBibleCli{
 
 
 
-
+//thanks to http://www.if-not-true-then-false.com/2010/php-class-for-coloring-php-command-line-cli-scripts-output-php-output-colorizing-using-bash-shell-colors/
 class Colors {
 	private $foreground_colors = array();
 	private $background_colors = array();
